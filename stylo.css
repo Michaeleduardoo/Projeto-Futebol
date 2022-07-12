@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#primeiro-conteiner {
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: #F0F2F5;
+}
+
+#conteiner {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 130px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    background: #D9FDD3;
+}
+
+#heade {
+
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 130px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    background: #D9FDD3;
+
+}
+
+
+#pri-Img {
+    position: relative;
+    max-width: 100px;
+
+}
+
+li {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 24px;
+
+
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+span {
+    color: #2F4F4F;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    bottom: 5px;
+    font-size: 10px;
+    font-weight: 200;
+
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 60px;
+
+}
+
+#links:hover {
+    background-color: #ccc;
+
+
+
+
+}
+
+
+
+#segunda-caixa {
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 700px;
+    display: inline-block;
+
+}
+
+
+#img-brasil {
+    position: absolute;
+    display: inline-block;
+    width: 290px;
+    margin-left: 880px;
+    margin-top: 150px;
+
+}
+
+#img-cruz {
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    margin-left: 850px;
+    margin-top: 140px;
+    display: none;
+
+}
+
+#img-barca {
+    position: absolute;
+    display: inline-block;
+    width: 420px;
+    margin-left: 800px;
+    margin-top: 200px;
+    display: none;
+
+}
+
+#imagem-img {
+    position: absolute;
+
+}
+
+
+#image {
+    position: absolute;
+    width: 50px;
+    left: 30%;
+    bottom: 8px;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.imagem-li {
+    list-style: none;
+    display: inline-block;
+
+    margin: 0 20px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagem-li:hover {
+    transform: translateY(-15px);
+}
+
+#brasil {
+    width: 45px;
+}
+
+#cruz {
+    text-align: center;
+}
+
+#barca {
+    margin-top: 8px;
+
+}
+
+#icons {
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    right: 30px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.li-icns {
+
+    display: flex;
+    margin-bottom: 59%;
+}
+
+i {
+    color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
+
+#caixa-principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFF00;
+    clip-path: circle(600px at right 800px);
+}
+
+
+h4 {
+    font-weight: 900;
+}
+
+
+@media screen and (max-width:915px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+
+    }
+
+    .toggle {
+        position: relative;
+        width: 70px;
+        height: 50px;
+        cursor: pointer;
+        background: url(./img/menu.png);
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 12;
+        margin-left: 115%
+    }
+
+    .toggle.active {
+
+        background: url(./img/close.png);
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+
+    }
+
+    #header ul {
+        display: none;
+        right: 89px;
+    }
+
+
+    #header ul.ulx.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #D9FDD3;
+        z-index: 10;
+        text-align: center;
+    }
+
+
+    #primeiro-conteiner {
+
+        width: 100%;
+        min-height: 180vh;
+        display: flex;
+        justify-content: space-between;
+        background: #F0F2F5;
+    }
+
+    span {
+        font-size: 24px;
+    }
+
+    #segunda-caixa {
+        margin-top: 100px;
+        text-align: center;
+        margin-right: 35px;
+        font-size: 14px;
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    #conteiner {
+        height: 70px;
+    }
+
+
+    #imagem-img {
+
+        display: block;
+    }
+
+    #img-brasil {
+        padding: 30px;
+        margin-left: 47px;
+        margin-top: 75vh;
+        text-align: center;
+    }
+
+    #img-cruz {
+        padding: 50px;
+        margin-left: -8px;
+        margin-top: 75vh;
+    }
+
+    #img-barca {
+        padding: 50px;
+        margin-left: -13px;
+        margin-top: 75vh;
+    }
+
+    #bra-cru-bar {
+        position: absolute;
+        margin-top: 100px;
+        right: 40px;
+    }
+
+    #ico {
+        margin-top: 60px;
+        display: flex;
+        text-align: center;
+        height: 90px;
+        border-radius: 9
+    }
+
+    i {
+        background: cadetblue;
+        width: 70px;
+        border-radius: 9px;
+        margin-left: 18px;
+    }
+
+
+
+    #icons {
+        margin-top: 700px;
+        text-align: center;
+    }
+
+
+
+    #pri-Img {
+        display: none;
+    }
+
+    #caixa-principal {
+        display: none;
+    }
+
+}
