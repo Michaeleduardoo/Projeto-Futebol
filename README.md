@@ -9,7 +9,7 @@ Um site moderno e interativo que celebra os maiores times do futebol mundial, su
 
 ## 🚀 Demonstração
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visitar-009639?style=for-the-badge&logo=vercel&logoColor=white)](https://futebol-legends.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visitar-009639?style=for-the-badge&logo=vercel&logoColor=white)](futebol-legends.netlify.app/)
 
 ## ✨ Características
 
