@@ -3,99 +3,212 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Legends - Troféus e História</title>
+
+    <link rel="shortcut icon" href="./img/bola.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
     <link rel="stylesheet" href="./stylo.css">
-    <title>Futebol</title>
 </head>
 
 <body>
-    <div id="caixa-principal"></div>
-    <div id="primeiro-conteiner">
 
-        
-        <div id="conteiner">
-            
-            <a href="#"> <img id="pri-Img" src="./img/bola.png" alt="Bola"></a>
-            <main id="header">
-            <div class="toggle"></div>
-            <ul class="ulx">
-                <li><a class="link" href="https://www.cruzeiro.com.br/">Meu time</a></li>
-                <li><a class="link" href="https://www.gazetaesportiva.com/futebol/mercado/">Mercado da bola</a></li>
-                <li><a class="link" id="links" href="https://www.placardefutebol.com.br/"> Jogos ao vivo</a></li>
-                <li><a class="link" href="mailto:michaeledu2018@gmail.com ? subject=subject text">Contato</a></li>
-
-            </ul>
-        </main>
-        </div>
-       
- 
-        <div id="segunda-caixa">
-
-            <h2><span> Troféus </span> da Seleção Brasileira , <br>Cruzeiro e Barcelona </h2>
-
-            <p>
-            <h4>Troféus da seleção:</h4> É a seleção mais bem-sucedida da história do futebol mundial, sendo a
-            recordista em
-            conquistas em Copas
-            do Mundo,
-            com cinco títulos invictos (1958, 1962, 1970, 1994 e 2002) e quatro títulos da Copa das Confederações
-            FIFA (1997, 2005, 2009 e 2013).<br>
-            <h4>Troféus do Cruzeiro: </h4> Taça Copa Libertadores da América 2 títulos 1976 e 1997. taça Campeonato
-            Brasileiro
-            2 títulos 1966, 2003.
-            taça Copa do Brasil 5 títulos 1966, 1993, 1996, 2000 e 2003. taça Recopa Sul-Americana 1 título
-            1998.<br>
-            <h4>Troféus do Barcelona:</h4> Nacionalmente, o Barcelona conquistou 26 vezes a La Liga, 30 a Copa del Rey,
-            13 a
-            Supercopa da Espanha,
-            três a Copa Eva Duarte e duas a Copa da Liga Espanhola,
-            sendo o detentor do maior número de troféus nas quatro últimas competições citadas.
-
-            </p>
-
-
-            <div id="bra-cru-bar">
-                <ul id="image">
-                    <li><img class="imagem-li" id="brasil" src="./img/cbf-logo-selecao-logo-brasil.png" alt="Brasil"></li>
-                    <li><img class="imagem-li" id="cruz" src="./img/Cruzeiro_Esporte_Clube-logo-E41C56B8CC-seeklogo.com.png" alt="Cruzeiro"></li>
-                    <li><img class="imagem-li" id="barca" src="./img/FCBarcelona.svg.png" alt="Barça"></li>
-                </ul>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="ball"></div>
             </div>
-
-
-            <div id="icons">
-
-                <ul id="ico">
-                    <li class="li-icns"> <a href="https://www.instagram.com/mic.eduardo/"> <i
-                                class='bx bxl-instagram'></i> </a> </li>
-                    <li class="li-icns"> <a href="https://github.com/Michaeleduardoo"><i class='bx bxl-github'></i> </a>
-                    </li>
-                    <li class="li-icns"> <a href="https://www.linkedin.com/in/michael-eduardo/"><i
-                                class='bx bxl-linkedin-square'></i></a></li>
-
-                </ul>
-
+            <div class="loader-text">Futebol Legends</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
             </div>
-
-        </div>
-
-        <div id="imagem-img">
-            <img id="img-brasil" src="./img/Cbf-logo-selecao-logo-brasil-4.png" alt="Brasil">
-            <img id="img-cruz" src="./img/Cruzeiro_Esporte_Clube-logo-E41C56B8CC-seeklogo.com.png" alt="cruz">
-            <img id="img-barca" src="./img/FCBarcelona.svg.png" alt="Barça">
-
-
         </div>
     </div>
 
 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class='bx bx-football'></i>
+                </div>
+                <span class="logo-text">Futebol Legends</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item active" data-team="brasil">
+                    <div class="nav-icon">
+                        <img src="./img/cbf-logo-selecao-logo-brasil.png" alt="Brasil">
+                    </div>
+                    <span>Brasil</span>
+                </div>
+                <div class="nav-item" data-team="cruzeiro">
+                    <div class="nav-icon">
+                        <img src="./img/Cruzeiro_Esporte_Clube-logo-E41C56B8CC-seeklogo.com.png" alt="Cruzeiro">
+                    </div>
+                    <span>Cruzeiro</span>
+                </div>
+                <div class="nav-item" data-team="barcelona">
+                    <div class="nav-icon">
+                        <img src="./img/FCBarcelona.svg.png" alt="Barcelona">
+                    </div>
+                    <span>Barcelona</span>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Troféus</span>
+                    <span class="title-line highlight">Legendários</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubra a história dos maiores times do futebol mundial e suas conquistas épicas
+                </p>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Copas do Mundo</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">26</div>
+                    <div class="stat-label">Títulos Nacionais</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Títulos Continentais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team-section">
+        <div class="container">
+            <div class="team-content">
+
+                <div class="team-card" id="team-card">
+                    <div class="team-header">
+                        <div class="team-logo" id="team-logo">
+                            <img src="./img/Cbf-logo-selecao-logo-brasil-4.png" alt="Team Logo" id="team-logo-img">
+                        </div>
+                        <div class="team-info">
+                            <h2 class="team-name" id="team-name">Seleção Brasileira</h2>
+                            <p class="team-description" id="team-description">
+                                A seleção mais bem-sucedida da história do futebol mundial, com cinco títulos de Copa do
+                                Mundo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-stats" id="team-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="world-cups">5</div>
+                                <div class="stat-title">Copas do Mundo</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚽</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="national-titles">0</div>
+                                <div class="stat-title">Títulos Nacionais</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🌍</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="continental-titles">4</div>
+                                <div class="stat-title">Títulos Continentais</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="team-history" id="team-history">
+                    <h3 class="history-title">História e Conquistas</h3>
+                    <div class="history-content" id="history-content">
+                        <div class="history-item">
+                            <div class="year">1958</div>
+                            <div class="achievement">Primeira Copa do Mundo</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="year">1962</div>
+                            <div class="achievement">Segunda Copa do Mundo</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="year">1970</div>
+                            <div class="achievement">Tricampeonato Mundial</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="year">1994</div>
+                            <div class="achievement">Tetracampeonato</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="year">2002</div>
+                            <div class="achievement">Pentacampeonato</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="fab-container">
+        <button class="fab" id="fab">
+            <i class='bx bx-list-ul'></i>
+        </button>
+        <div class="fab-menu" id="fab-menu">
+            <a href="https://mepdevs.vercel.app/" class="fab-item" data-tooltip="Portfólio" target="_blank">
+                <i class='bx bx-code-alt'></i>
+            </a>
+            <a href="https://github.com/Michaeleduardoo" class="fab-item" data-tooltip="GitHub" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/michael-eduardo/" class="fab-item" data-tooltip="LinkedIn"
+                target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </div>
     </div>
+
+
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+
+    <div class="particles" id="particles"></div>
+
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 
 </html>
